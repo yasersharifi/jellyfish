@@ -63,3 +63,15 @@
     opacity-100  
     } */
 }
+
+/* debug utils */
+
+.d {
+    border: 1px solid red;
+}
+.dd {
+    border: 1px solid yellow;
+}
+.ddd {
+    border: 1px solid green;
+}
