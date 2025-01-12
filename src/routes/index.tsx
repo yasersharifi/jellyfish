@@ -5,6 +5,8 @@ import { HomePage, NotFoundPage } from "@/components/pages";
 import AvailabilityPage from "@/components/pages/Availability";
 import SetUserName from "@/components/pages/SetUserName";
 import PaymentResult from "@/components/pages/PaymentResult";
+import Dashboard from "@/components/pages/Dashboard";
+import NpubEditForm from "@/components/pages/Dashboard/Edit";
 
 export const router = createBrowserRouter([
     {
@@ -30,6 +32,15 @@ export const router = createBrowserRouter([
             {
                 path: "*",
                 element: <NotFoundPage />,
+            },
+
+            {
+                path: "/dashboard",
+                element: <Dashboard />,
+            },
+            {
+                path: "/dashboard/edit/:id",
+                element: <NpubEditForm />,
             },
         ],
     },
