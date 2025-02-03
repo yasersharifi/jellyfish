@@ -8,10 +8,10 @@ const ContributeSection = () => {
     return (
         <section className="pt-[212px] pb-[289px] flex flex-col items-center gap-12">
             <GitHubIcon />
-            <h1 className="gradient-text text text-center font-bold text-5xl uppercase max-w-[900px] mx-auto leading-[70px] animate-fade-up ">
+            <h1 className="gradient-text text text-center font-bold text-base sm:text-xl md:text-3xl lg:text-5xl uppercase max-w-[900px] mx-auto leading-[70px] animate-fade-up ">
                 Contribute to JellyFish development
             </h1>
-            <p className="font-roboto-mono up max-w-[900px] mx-auto text-center text-xl">
+            <p className="font-roboto-mono up max-w-[900px] mx-auto text-center text-base sm:text-md md:text-lg lg:text-xl">
                 The JellyFish used free and open source software to provide
                 services. you can be a part of jellyfish software ecosystem
                 development!
