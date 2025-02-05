@@ -7,23 +7,23 @@ import { cn } from "@/lib/utils";
 import {
     Carousel,
     CarouselContent,
-    CarouselItem
-  } from "@/components/ui/carousel"
+    CarouselItem,
+} from "@/components/ui/carousel";
 
 const TeamMembersSection = () => {
     return (
         <section className="space-y-[84px] mt-48 w-full max-w-[1430px] mx-auto">
             <SectionTitle className="">Meet the JellyFish team</SectionTitle>
             <AnimateWrapper delay={0.4}>
-                    <Carousel className="w-full">
-                        <CarouselContent>
-                            {teamMembersData.map((service, key) => (
-                                <CarouselItem key={key} className="basis-[190px]">
-                                    <TeamMemberCard {...service}  />
-                                </CarouselItem>
-                            ))}
-                        </CarouselContent>
-                    </Carousel>
+                <Carousel className="w-full">
+                    <CarouselContent>
+                        {teamMembersData.map((service, key) => (
+                            <CarouselItem key={key} className="basis-[190px]">
+                                <TeamMemberCard {...service} />
+                            </CarouselItem>
+                        ))}
+                    </CarouselContent>
+                </Carousel>
             </AnimateWrapper>
             <AnimatedGridPattern
                 numSquares={30}
