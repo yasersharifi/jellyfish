@@ -5,6 +5,7 @@ import { ReactNode } from "react";
 export type ServicesCardProps = {
     icon: ReactNode;
     isItPublished?: boolean;
+    href?: string;
 } & TitleDescriptionT;
 
 export const servicesData: ServicesCardProps[] = [
@@ -14,6 +15,7 @@ export const servicesData: ServicesCardProps[] = [
             "Let your friends to find you by your name on chaotic nostr ecosystem easily. Pay once keep it forever.",
         icon: <NipIcon />,
         isItPublished: true,
+        href: "/availability",
     },
     {
         title: "Relay Services",

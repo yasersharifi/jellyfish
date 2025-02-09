@@ -8,7 +8,7 @@ const ServicesCard = ({
     isItPublished,
 }: ServicesCardProps) => {
     return (
-        <div className="relative text-center col-span-1 rounded-[22px] p-[1px] bg-gradient-to-tl from-[#A0C5F7] to-[#111628]/[0.62]">
+        <div className="w-full relative text-center rounded-[22px] p-[1px] bg-gradient-to-tl from-[#A0C5F7] to-[#111628]/[0.62]">
             <div className="bg-[url(/svg/services-bg.svg)] bg-[#141B30] bg-cover bg-center rounded-[20px] p-4 h-full  flex flex-col items-center ">
                 <GradientIconBox>{icon}</GradientIconBox>
                 <div className="py-6 mt-4">
