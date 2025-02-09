@@ -13,7 +13,7 @@ const SectionTitle = forwardRef<HTMLHeadingElement, SectionTitleProps>(
             <AnimateWrapper once delay={0.3}>
                 <h2
                     className={cn(
-                        "text-[72px] font-bold leading-[86px] tracking-tighter gradient-text",
+                        "text-[36px] md:text-[72px] font-bold leading-[86px] tracking-tighter gradient-text",
                         className,
                     )}
                     {...props}

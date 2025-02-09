@@ -4,17 +4,26 @@ import TeamMemberCard from "./TeamMemberCard";
 import AnimateWrapper from "@/components/AnimateWrapper";
 import AnimatedGridPattern from "@/components/ui/animated-grid-pattern";
 import { cn } from "@/lib/utils";
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+} from "@/components/ui/carousel";
 
 const TeamMembersSection = () => {
     return (
-        <section className="space-y-[84px] mt-48 w-full">
+        <section className="space-y-[84px] mt-48 w-full max-w-[1430px] mx-auto">
             <SectionTitle className="">Meet the JellyFish team</SectionTitle>
             <AnimateWrapper delay={0.4}>
-                <div className="flex justify-between gap-4 ">
-                    {teamMembersData.map((service, key) => (
-                        <TeamMemberCard {...service} key={key} />
-                    ))}
-                </div>
+                <Carousel className="w-full">
+                    <CarouselContent>
+                        {teamMembersData.map((service, key) => (
+                            <CarouselItem key={key} className="basis-[190px]">
+                                <TeamMemberCard {...service} />
+                            </CarouselItem>
+                        ))}
+                    </CarouselContent>
+                </Carousel>
             </AnimateWrapper>
             <AnimatedGridPattern
                 numSquares={30}

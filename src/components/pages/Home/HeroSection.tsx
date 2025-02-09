@@ -1,11 +1,11 @@
 const HeroSection = () => {
     return (
         <section className="  pt-[212px] pb-[289px] relative  ">
-            <h1 className="gradient-text text text-center font-bold   text-[136px] uppercase max-w-[873px] mx-auto leading-[86px]  animate-fade-up ">
+            <h1 className="gradient-text text text-center font-bold  text-[36px] sm:text-[72px] lg:text-[136px] xl:text-[160px] uppercase max-w-[873px] mx-auto leading-[86px]  animate-fade-up ">
                 Stay
                 <br /> Immortal!
             </h1>
-            <p className="font-roboto-mono up max-w-[503px] mx-auto text-center mt-5 text-xl">
+            <p className="font-roboto-mono up max-w-[503px] mx-auto text-center mt-5 text:lg md:text-xl">
                 Endlessly enjoy freedom social with ultimate JellyFish services.
             </p>
 
