@@ -22,7 +22,7 @@ const AuthenticationButton = () => {
     }
 
     return (
-        <Button variant="outline" className="w-full h-12">
+        <Button variant="outline" className="w-full h-12 rounded-full">
             <NostrIconWhite /> Log In
         </Button>
     );

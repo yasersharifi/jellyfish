@@ -14,36 +14,40 @@ const SetUserName = () => {
 
     return (
         <section
-            className={cn("container mx-auto py-[152px]  ", {
-                "space-y-[111px]": isUsernameAvailable,
-                "space-y-[72px]": !isUsernameAvailable,
-            })}
+            className={cn(
+                "py-10 sm:py-20 md:py-24 lg:py-[152px]", // Adjust padding for different screen sizes
+                {
+                    "space-y-8 sm:space-y-12 md:space-y-16 lg:space-y-[111px]":
+                        isUsernameAvailable,
+                    "space-y-6 sm:space-y-10 md:space-y-12 lg:space-y-[72px]":
+                        !isUsernameAvailable,
+                },
+            )}
         >
             <IsAvailableUserName
                 isUsernameAvailable={isUsernameAvailable}
                 username={username}
                 status={status}
             />
-            <div className="max-w-[645px] mx-auto space-y-6 ">
+            <div className="max-w-full sm:max-w-md md:max-w-lg lg:max-w-[645px] mx-auto space-y-4 sm:space-y-6 md:space-y-8 lg:space-y-6">
                 {isUsernameAvailable ? (
                     <>
                         <SetUserNameForm />
                         <div>
-                            <p className=" text-sm font-roboto-mono text-[#80899F]">
+                            <p className="text-sm sm:text-base md:text-lg lg:text-sm font-roboto-mono text-[#80899F]">
                                 Lifetime payment for{" "}
-                                <span className="font-bankGothic text-base font-light">
-                                    {" "}
-                                    {username}{" "}
+                                <span className="text-base font-light sm:text-lg md:text-xl lg:text-base font-bankGothic">
+                                    {username}
                                 </span>{" "}
-                                5000 sats{" "}
+                                5000 sats
                             </p>
                         </div>
                     </>
                 ) : (
                     <>
                         <NameSuggestions />
-                        <div className="space-y-6">
-                            <h4 className="gradient-text text-xl font-bold">
+                        <div className="space-y-4 sm:space-y-6 md:space-y-8 lg:space-y-6">
+                            <h4 className="text-base font-bold sm:text-lg md:text-xl lg:text-xl gradient-text">
                                 OR Type another name:
                             </h4>
                             <CheckAvailabilityForm />

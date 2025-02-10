@@ -8,6 +8,18 @@ module.exports = {
             "roboto-mono": ["Roboto-Mono", "monospace"],
         },
         extend: {
+            container: {
+                center: true,
+                padding: "1rem",
+                screens: {
+                    DEFAULT: "100%",
+                    sm: "600px",
+                    md: "728px",
+                    lg: "984px",
+                    xl: "1240px",
+                    "2xl": "1430px",
+                },
+            },
             borderRadius: {
                 lg: "var(--radius)",
                 md: "calc(var(--radius) - 2px)",
@@ -98,29 +110,29 @@ module.exports = {
         },
     },
     plugins: [
-        function ({ addComponents }) {
-            addComponents({
-                ".container": {
-                    maxWidth: "100%",
-                    "@screen sm": {
-                        // minWidth: '0',
-                        padding: "0 .5rem",
-                    },
-                    "@screen md": {
-                        // minWidth: '768px',
-                        padding: "0 1rem",
-                    },
-                    "@screen lg": {
-                        // minWidth: '1024px',
-                        padding: "0 24px",
-                    },
-                    "@screen xl": {
-                        maxWidth: "1480px",
-                        padding: "0 24px",
-                    },
-                },
-            });
-        },
+        // function ({ addComponents }) {
+        //     addComponents({
+        //         ".container": {
+        //             maxWidth: "100%",
+        //             "@screen sm": {
+        //                 // minWidth: '0',
+        //                 padding: "0 .5rem",
+        //             },
+        //             "@screen md": {
+        //                 // minWidth: '768px',
+        //                 padding: "0 1rem",
+        //             },
+        //             "@screen lg": {
+        //                 // minWidth: '1024px',
+        //                 padding: "0 24px",
+        //             },
+        //             "@screen xl": {
+        //                 maxWidth: "1480px",
+        //                 padding: "0 24px",
+        //             },
+        //         },
+        //     });
+        // },
         require("tailwindcss-animate"),
         require("tailwindcss-animated"),
     ],

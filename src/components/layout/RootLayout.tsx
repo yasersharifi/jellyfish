@@ -16,7 +16,7 @@ const RootLayout = () => {
             <AppSidebar />
 
             <main className="relative w-full">
-                <div className=" -z-50 absolute top-0 left-1/2 -translate-x-1/2 animate-fade">
+                <div className="absolute top-0 -translate-x-1/2  -z-50 left-1/2 animate-fade">
                     <img src="/svg/top-light.svg" alt="top-light" />
                 </div>
                 {pathname !== "/" && (
@@ -31,7 +31,7 @@ const RootLayout = () => {
                     </div>
                 )}
                 <div
-                    className="fixed h-screen inset-0 w-full z-20"
+                    className="fixed inset-0 z-20 w-full h-screen"
                     style={{
                         backgroundImage:
                             "linear-gradient(269.54deg, #05060F 0.39%, rgba(5, 6, 15, 0) 35.21%, rgba(5, 6, 15, 0) 64.87%, #05060F 99.6%)",
@@ -41,7 +41,7 @@ const RootLayout = () => {
                     {/* -- If App Open Ont the Large screen */}
                     <Navbar />
 
-                    <main className="container mx-auto ">
+                    <main className="container">
                         <Outlet />
                     </main>
                     <Footer />
