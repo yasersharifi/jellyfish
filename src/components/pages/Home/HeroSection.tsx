@@ -1,9 +1,9 @@
 const HeroSection = () => {
     return (
         <section className="pt-[100px] pb-[150px] md:pt-[150px] md:pb-[200px] lg:pt-[212px] lg:pb-[289px] xl:pb-[350px] relative">
-            <h1 className="gradient-text text-center font-bold text-[36px] xs:text-[48px] sm:text-[72px] md:text-[96px] lg:text-[136px] xl:text-[160px] uppercase max-w-[90%] sm:max-w-[80%] md:max-w-[873px] mx-auto leading-[40px] sm:leading-[60px] lg:leading-[86px] animate-fade-up">
-                Stay
-                <br /> Immortal!
+            <h1 className="gradient-text text-center font-bold text-[36px] xs:text-[48px] sm:text-[72px] md:text-[96px] lg:text-[136px] xl:text-[160px] uppercase max-w-[90%]  md:max-w-[873px] mx-auto leading-[40px] sm:leading-[60px] lg:leading-[86px] animate-fade-up font-bank-gothic   tracking-[-0.06em]">
+                Stay <br />
+                Immortal!
             </h1>
             <p className="font-roboto-mono max-w-[80%] sm:max-w-[60%] md:max-w-[503px] mx-auto text-center mt-4 md:mt-6 lg:mt-8 text-base sm:text-lg md:text-xl">
                 Endlessly enjoy freedom social with ultimate JellyFish services.
@@ -11,7 +11,7 @@ const HeroSection = () => {
 
             <div className="-z-20 absolute -bottom-[20%] sm:-bottom-[30%] md:-bottom-[35%] lg:-bottom-[43%] left-1/2 -translate-x-1/2 w-[80%] max-w-[806px]">
                 <img
-                    className="animate-fade-up w-full h-auto"
+                    className="w-full h-auto animate-fade-up"
                     src="/svg/half-ring.svg"
                     alt="half-ring"
                     loading="lazy"
