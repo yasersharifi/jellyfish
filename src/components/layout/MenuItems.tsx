@@ -1,7 +1,6 @@
 import { HandIcon } from "@/assets/icons/nav/HandIcon";
 import { LightingIcon } from "@/assets/icons/nav/LightingIcon";
 import { NostrIconPink } from "@/assets/icons/nav/NostrIconPink";
-import { ArrowBigDown } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const MenuItems = () => {
