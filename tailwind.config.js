@@ -8,6 +8,18 @@ module.exports = {
             "roboto-mono": ["Roboto-Mono", "monospace"],
         },
         extend: {
+            container: {
+                center: true,
+                padding: "1rem",
+                screens: {
+                    DEFAULT: "100%",
+                    sm: "600px",
+                    md: "728px",
+                    lg: "984px",
+                    xl: "1240px",
+                    "2xl": "1430px",
+                },
+            },
             borderRadius: {
                 lg: "var(--radius)",
                 md: "calc(var(--radius) - 2px)",
@@ -54,6 +66,19 @@ module.exports = {
                     4: "hsl(var(--chart-4))",
                     5: "hsl(var(--chart-5))",
                 },
+
+                sidebar: {
+                    DEFAULT: "hsl(var(--sidebar-background))",
+                    foreground: "hsl(var(--sidebar-foreground))",
+                    primary: "hsl(var(--sidebar-primary))",
+                    "primary-foreground":
+                        "hsl(var(--sidebar-primary-foreground))",
+                    accent: "hsl(var(--sidebar-accent))",
+                    "accent-foreground":
+                        "hsl(var(--sidebar-accent-foreground))",
+                    border: "hsl(var(--sidebar-border))",
+                    ring: "hsl(var(--sidebar-ring))",
+                },
             },
             animation: {
                 "shimmer-slide":
@@ -85,29 +110,29 @@ module.exports = {
         },
     },
     plugins: [
-        function ({ addComponents }) {
-            addComponents({
-                ".container": {
-                    maxWidth: "100%",
-                    "@screen sm": {
-                        // minWidth: '0',
-                        padding: "0 .5rem",
-                    },
-                    "@screen md": {
-                        // minWidth: '768px',
-                        padding: "0 1rem",
-                    },
-                    "@screen lg": {
-                        // minWidth: '1024px',
-                        padding: "0 24px",
-                    },
-                    "@screen xl": {
-                        maxWidth: "1480px",
-                        padding: "0 24px",
-                    },
-                },
-            });
-        },
+        // function ({ addComponents }) {
+        //     addComponents({
+        //         ".container": {
+        //             maxWidth: "100%",
+        //             "@screen sm": {
+        //                 // minWidth: '0',
+        //                 padding: "0 .5rem",
+        //             },
+        //             "@screen md": {
+        //                 // minWidth: '768px',
+        //                 padding: "0 1rem",
+        //             },
+        //             "@screen lg": {
+        //                 // minWidth: '1024px',
+        //                 padding: "0 24px",
+        //             },
+        //             "@screen xl": {
+        //                 maxWidth: "1480px",
+        //                 padding: "0 24px",
+        //             },
+        //         },
+        //     });
+        // },
         require("tailwindcss-animate"),
         require("tailwindcss-animated"),
     ],
