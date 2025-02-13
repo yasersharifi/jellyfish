@@ -6,6 +6,7 @@ import AvailabilityPage from "@/components/pages/Availability";
 import SetUserName from "@/components/pages/SetUserName";
 import PaymentResult from "@/components/pages/PaymentResult";
 import Dashboard from "@/components/pages/Dashboard";
+import SellRelay from "@/components/pages/SellRelay";
 import NpubEditForm from "@/components/pages/Dashboard/Edit";
 
 export const router = createBrowserRouter([
@@ -28,6 +29,10 @@ export const router = createBrowserRouter([
             {
                 path: "/payment-result",
                 element: <PaymentResult />,
+            },
+            {
+                path: "/sell-relay",
+                element: <SellRelay />,
             },
             {
                 path: "*",
