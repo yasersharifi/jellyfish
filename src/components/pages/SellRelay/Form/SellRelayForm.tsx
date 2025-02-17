@@ -50,6 +50,7 @@ const SellRelayForm = () => {
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4 animate-fade-up animate-delay-400">
                     {MONTHS.map(item => (
                         <label
+                            key={`month-${item}`}
                             className="flex items-center gap-2 px-4 py-3 border border-solid rounded-[14px] cursor-pointer border-stone-600"
                             htmlFor={`month-${item}`}
                         >
