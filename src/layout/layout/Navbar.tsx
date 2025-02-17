@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { JellyFishIcon } from "@/assets/icons/nav/JellyFishIcon";
-import { useSidebar } from "../ui/Sidebar";
+import { useSidebar } from "../../components/ui/Sidebar";
 import MenuItems from "./MenuItems";
 import AuthenticationAction from "./AuthenticationActions";
 import { AlignJustify } from "lucide-react";

@@ -1,5 +1,5 @@
 import { NostrIconWhite } from "@/assets/icons/NostrIconWhite";
-import { Button } from "../ui/Button";
+import { Button } from "../../components/ui/Button";
 import { useState } from "react";
 
 const AuthenticationButton = () => {

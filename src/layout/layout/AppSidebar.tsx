@@ -9,7 +9,7 @@ import {
     SidebarHeader,
     SidebarMenu,
     useSidebar,
-} from "./../ui/Sidebar";
+} from "../../components/ui/Sidebar";
 import { Link } from "react-router-dom";
 import MenuItems from "./MenuItems";
 import { JellyFishIcon } from "@/assets/icons/nav/JellyFishIcon";

@@ -2,8 +2,8 @@ import { Outlet, useLocation } from "react-router-dom";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import AppSidebar from "./AppSidebar";
-import { SidebarProvider } from "../ui/sidebar";
 import Cookies from "js-cookie";
+import { SidebarProvider } from "@/components/ui/Sidebar";
 
 const RootLayout = () => {
     const { pathname } = useLocation();
@@ -16,7 +16,7 @@ const RootLayout = () => {
             <AppSidebar />
 
             <main className="relative w-full">
-                <div className="absolute top-0 -translate-x-1/2  -z-50 left-1/2 animate-fade">
+                <div className="absolute top-0 -translate-x-1/2 -z-50 left-1/2 animate-fade">
                     <img src="/svg/top-light.svg" alt="top-light" />
                 </div>
                 {pathname !== "/" && (
