@@ -27,7 +27,6 @@ const AppSidebar = () => {
                             <Link to="/">
                                 <JellyFishIcon />
                             </Link>
-
                             <div className="inline text-2xl font-bold gradient-text font-bankGothic">
                                 JellyFish
                             </div>
