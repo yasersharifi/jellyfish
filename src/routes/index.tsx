@@ -1,12 +1,14 @@
 import { createBrowserRouter } from "react-router-dom";
 
-import RootLayout from "@/components/layout/RootLayout";
+import RootLayout from "@/layout/layout";
 import { HomePage, NotFoundPage } from "@/components/pages";
 import AvailabilityPage from "@/components/pages/Availability";
 import SetUserName from "@/components/pages/SetUserName";
 import PaymentResult from "@/components/pages/PaymentResult";
 import Dashboard from "@/components/pages/Dashboard";
+import SellRelay from "@/components/pages/SellRelay";
 import NpubEditForm from "@/components/pages/Dashboard/Edit";
+import DashboardLayout from "@/layout/dashboard-layout";
 
 export const router = createBrowserRouter([
     {
@@ -29,19 +31,28 @@ export const router = createBrowserRouter([
                 path: "/payment-result",
                 element: <PaymentResult />,
             },
+        ],
+    },
+    {
+        path: "dashboard",
+        element: <DashboardLayout />,
+        children: [
             {
-                path: "*",
-                element: <NotFoundPage />,
-            },
-
-            {
-                path: "/dashboard",
+                path: "",
                 element: <Dashboard />,
             },
             {
-                path: "/dashboard/edit/:id",
+                path: "edit/:id",
                 element: <NpubEditForm />,
             },
+            {
+                path: "sell-relay",
+                element: <SellRelay />,
+            },
         ],
+    },
+    {
+        path: "*",
+        element: <NotFoundPage />,
     },
 ]);

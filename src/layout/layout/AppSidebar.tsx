@@ -9,7 +9,7 @@ import {
     SidebarHeader,
     SidebarMenu,
     useSidebar,
-} from "./../ui/Sidebar";
+} from "../../components/ui/Sidebar";
 import { Link } from "react-router-dom";
 import MenuItems from "./MenuItems";
 import { JellyFishIcon } from "@/assets/icons/nav/JellyFishIcon";
@@ -22,13 +22,13 @@ const AppSidebar = () => {
         <Sidebar side="left" variant="sidebar">
             <SidebarContent className="p-3">
                 <SidebarHeader>
-                    <div className="flex  gap-2 items-center justify-between">
-                        <div className="flex gap-2 items-center">
+                    <div className="flex items-center justify-between gap-2">
+                        <div className="flex items-center gap-2">
                             <Link to="/">
                                 <JellyFishIcon />
                             </Link>
 
-                            <div className="inline gradient-text font-bankGothic font-bold text-2xl">
+                            <div className="inline text-2xl font-bold gradient-text font-bankGothic">
                                 JellyFish
                             </div>
                         </div>

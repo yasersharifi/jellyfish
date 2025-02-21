@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { JellyFishIcon } from "@/assets/icons/nav/JellyFishIcon";
-import { useSidebar } from "../ui/Sidebar";
+import { useSidebar } from "../../components/ui/Sidebar";
 import MenuItems from "./MenuItems";
 import AuthenticationAction from "./AuthenticationActions";
 import { AlignJustify } from "lucide-react";
@@ -12,31 +12,31 @@ const Navbar = () => {
     return (
         <nav className="">
             <div className="p-6 md:p-8 lg:px-12">
-                <div className="flex justify-between items-center">
-                    <div className="flex flex-shrink-0 w-fit gap-2 items-center">
+                <div className="flex items-center justify-between">
+                    <div className="flex items-center flex-shrink-0 gap-2 w-fit">
                         <Link to="/">
                             <JellyFishIcon />
                         </Link>
 
-                        <div className="hidden lg:inline gradient-text font-bankGothic font-bold text-2xl">
+                        <div className="hidden text-2xl font-bold lg:inline gradient-text font-bankGothic">
                             JellyFish
                         </div>
                     </div>
 
+                    <div className="items-center justify-center flex-grow hidden md:flex md:space-x-8">
+                        <MenuItems />
+                    </div>
+
+                    <div className="flex-shrink-0 hidden md:block w-fit">
+                        <AuthenticationAction />
+                    </div>
+
                     <button
-                        className="md:hidden text-white"
+                        className="text-white md:hidden"
                         onClick={toggleSidebar}
                     >
                         <AlignJustify />
                     </button>
-
-                    <div className="hidden flex-grow md:flex justify-center md:space-x-8 items-center">
-                        <MenuItems />
-                    </div>
-
-                    <div className="hidden md:block flex-shrink-0 w-fit">
-                        <AuthenticationAction />
-                    </div>
                 </div>
             </div>
         </nav>
