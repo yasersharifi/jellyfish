@@ -1,4 +1,4 @@
-import { HandIcon } from "@/assets/icons/nav/HandIcon";
+import { RelayIcon } from "@/assets/icons";
 import { LightingIcon } from "@/assets/icons/nav/LightingIcon";
 import { NostrIconPink } from "@/assets/icons/nav/NostrIconPink";
 import { Link } from "react-router-dom";
@@ -6,12 +6,12 @@ import { Link } from "react-router-dom";
 const MenuItems = () => {
     return (
         <>
-            <Link to="/availability" className="flex items-center gap-2">
+            <Link to="/relay" className="flex items-center gap-2">
                 <div className="flex-shrink-0">
-                    <HandIcon />
+                    <RelayIcon />
                 </div>
                 <div className="text-lg font-medium gradient-text font-roboto-mono">
-                    NIP-05 Service
+                    Relay Service
                 </div>
             </Link>
             <Link
