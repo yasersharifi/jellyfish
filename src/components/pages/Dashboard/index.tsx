@@ -1,34 +1,28 @@
-import { dashboardService } from "@/services/api/dashboard.service";
-import MyNpubsCard, { MyNpubsCardProps } from "./MyNpubsCard";
-import { Skeleton } from "@/components/ui/skeleton";
-import AnimateWrapper from "@/components/AnimateWrapper";
-import useFetch from "@/hooks/useFetch";
-import { useCallback } from "react";
+
 import { Link } from "react-router-dom";
 import { buttonVariants } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
-import Tag from "@/components/ui/Tag";
 
-const sampleData: MyNpubsCardProps[] = [
-    {
-        username: "Ehsan@nosrt.eco",
-        npub: "npub1h5h535j4809uf23j8y9t4n23090",
-        id: "1",
-        // items: [
-        //     {
-        //         name: "npub",
-        //         value: "npub1h5h535j4809uf23j8y9t4n23090",
-        //     },
-        // ],
-    },
-];
+// const sampleData: MyNpubsCardProps[] = [
+//     {
+//         username: "Ehsan@nosrt.eco",
+//         npub: "npub1h5h535j4809uf23j8y9t4n23090",
+//         id: "1",
+//         // items: [
+//         //     {
+//         //         name: "npub",
+//         //         value: "npub1h5h535j4809uf23j8y9t4n23090",
+//         //     },
+//         // ],
+//     },
+// ];
 
 const Dashboard = () => {
-    const fetchUsernames = useCallback(() => {
-        return dashboardService.getMyUsernames().then(res => res.data.data);
-    }, []);
+    // const fetchUsernames = useCallback(() => {
+    //     return dashboardService.getMyUsernames().then(res => res.data.data);
+    // }, []);
 
-    const { data, loading, error } = useFetch(fetchUsernames);
+    // const { data, loading, error } = useFetch(fetchUsernames);
 
     // if (error)
     //     return (
