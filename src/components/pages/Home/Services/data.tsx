@@ -10,17 +10,17 @@ export type ServicesCardProps = {
 
 export const servicesData: ServicesCardProps[] = [
     {
-        title: "NIP-05 Service",
-        description:
-            "Let your friends to find you by your name on chaotic nostr ecosystem easily. Pay once keep it forever.",
-        icon: <NipIcon />,
-        isItPublished: true,
-        href: "/availability",
-    },
-    {
         title: "Relay Services",
         description:
             "Let your friends to find you by your name on chaotic nostr ecosystem easily. Pay once keep it forever.",
         icon: <RelayIcon />,
+        isItPublished: true,
+        href: "/relay",
+    },
+    {
+        title: "NIP-05 Service",
+        description:
+            "Let your friends to find you by your name on chaotic nostr ecosystem easily. Pay once keep it forever.",
+        icon: <NipIcon />,
     },
 ];

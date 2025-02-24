@@ -1,7 +1,7 @@
 const HeroSection = () => {
     return (
         <section className="pt-[100px] pb-[150px] md:pt-[150px] md:pb-[200px] lg:pt-[212px] lg:pb-[289px] xl:pb-[350px] relative">
-            <h1 className="gradient-text text-center font-bold text-[36px] xs:text-[48px] sm:text-[72px] md:text-[96px] lg:text-[136px] xl:text-[160px] uppercase max-w-[90%]  md:max-w-[873px] mx-auto leading-[40px] sm:leading-[60px] lg:leading-[86px] animate-fade-up font-bank-gothic   tracking-[-0.06em]">
+            <h1 className="gradient-text text-center font-bold text-[36px] xs:text-[48px] sm:text-[72px] md:text-[96px] lg:text-[136px] xl:text-[160px] uppercase  mx-auto leading-[40px] sm:leading-[60px] lg:leading-[86px] animate-fade-up font-bank-gothic   tracking-[-0.06em]">
                 Stay <br />
                 Immortal!
             </h1>

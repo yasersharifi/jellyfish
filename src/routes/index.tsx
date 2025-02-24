@@ -20,7 +20,7 @@ export const router = createBrowserRouter([
                 element: <HomePage />,
             },
             {
-                path: "/availability",
+                path: "/nip05",
                 element: <AvailabilityPage />,
             },
             {
@@ -30,6 +30,10 @@ export const router = createBrowserRouter([
             {
                 path: "/payment-result",
                 element: <PaymentResult />,
+            },
+            {
+                path: "relay",
+                element: <SellRelay />,
             },
         ],
     },
@@ -44,10 +48,6 @@ export const router = createBrowserRouter([
             {
                 path: "edit/:id",
                 element: <NpubEditForm />,
-            },
-            {
-                path: "sell-relay",
-                element: <SellRelay />,
             },
         ],
     },

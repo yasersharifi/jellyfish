@@ -1,23 +1,44 @@
 import { NostrIconWhite } from "@/assets/icons/NostrIconWhite";
 import { Button } from "../../components/ui/Button";
-import { useState } from "react";
+import React from "react";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
-const AuthenticationButton = () => {
-    const [user, setUser] = useState<any>(null);
+type Props = {
+    isLogin?: boolean;
+    isCollapsed?: boolean;
+};
 
-    const handleLogout = () => {
-        // Add your logout logic here
-        setUser(null);
-    };
-
-    if (user) {
+const AuthenticationButton: React.FC<Props> = ({ isLogin, isCollapsed }) => {
+    if (isLogin) {
         return (
-            <Button
-                onClick={handleLogout}
-                className="w-full text-gray-800 dark:text-white"
-            >
-                Logout
-            </Button>
+            <>
+                {isCollapsed ? (
+                    <Avatar className="w-8 h-8" title="John Doe">
+                        <AvatarImage
+                            src="/images/team-members/1.png"
+                            alt="User Avatar"
+                        />
+                        <AvatarFallback>My User Name</AvatarFallback>
+                    </Avatar>
+                ) : (
+                    <Button
+                        variant="outline"
+                        className="justify-start w-full h-12 rounded-full"
+                    >
+                        <Avatar className="w-8 h-8">
+                            <AvatarImage
+                                src="/images/team-members/1.png"
+                                alt="User Avatar"
+                            />
+                            <AvatarFallback>My User Name</AvatarFallback>
+                        </Avatar>
+
+                        <div>
+                            <p className="text-sm font-medium">John Doe</p>
+                        </div>
+                    </Button>
+                )}
+            </>
         );
     }
 
