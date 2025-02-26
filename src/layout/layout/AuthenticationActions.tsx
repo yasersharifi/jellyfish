@@ -25,7 +25,7 @@ const AuthenticationButton: React.FC<Props> = ({ isLogin, isCollapsed }) => {
                         variant="outline"
                         className="justify-start w-full h-12 rounded-full"
                     >
-                        <Avatar className="w-8 h-8">
+                        <Avatar className="w-8 h-8 shrink-0">
                             <AvatarImage
                                 src="/images/team-members/1.png"
                                 alt="User Avatar"
@@ -33,9 +33,7 @@ const AuthenticationButton: React.FC<Props> = ({ isLogin, isCollapsed }) => {
                             <AvatarFallback>My User Name</AvatarFallback>
                         </Avatar>
 
-                        <div>
-                            <p className="text-sm font-medium">John Doe</p>
-                        </div>
+                            <p className="text-sm font-medium line-clamp-1">John Doe</p>
                     </Button>
                 )}
             </>
