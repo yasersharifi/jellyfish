@@ -33,7 +33,9 @@ const AuthenticationButton: React.FC<Props> = ({ isLogin, isCollapsed }) => {
                             <AvatarFallback>My User Name</AvatarFallback>
                         </Avatar>
 
-                            <p className="text-sm font-medium line-clamp-1">John Doe</p>
+                        <p className="text-sm font-medium line-clamp-1">
+                            John Doe
+                        </p>
                     </Button>
                 )}
             </>
